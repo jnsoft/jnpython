@@ -17,6 +17,8 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 
+keywords = ["misc", "util", "helpers"]
+
 [tool.pytest.ini_options]
 addopts = [
     "--import-mode=importlib",
