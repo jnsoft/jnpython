@@ -188,4 +188,11 @@ def deepcopy(arr):
 def array_copy(src, src_start_ix, dst, dst_start_ix, length):
     for i in range(length):
         dst[i + dst_start_ix] = src[i + src_start_ix]
+
+def main():
+    pass
+
+if __name__ == "__main__":
+    #sys.exit(main())
+    main()
     

@@ -1,5 +1,4 @@
 from random import randint
-from time import time
 import int_helper
 import pytest
 from functools import reduce
@@ -153,10 +152,7 @@ def test_phi_sieve():
 # END
 
 def main():
-    @timer_func
-    def f():
-        return int_helper.primes_sieve(100000000)
-    a = f()
+    pass
 
 if __name__ == "__main__":
     #sys.exit(main())
