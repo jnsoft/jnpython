@@ -17,6 +17,11 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
+
 [project.urls]
 "Homepage" = "https://github.com/jnsoft/jnpython"
 "Bug Tracker" = "https://github.com/jnsoft/jnpython/issues"
