@@ -31,8 +31,8 @@ jobs:
       - name: Display Python version
         run: python -c "import sys; print(sys.version)"
         
-      - name: Install package
-        run: python src/int_helper.py install
+      #- name: Install package
+      #  run: python src/int_helper.py install
         
       - name: Install pytest
         run: |
