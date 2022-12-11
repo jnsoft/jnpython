@@ -148,12 +148,3 @@ def test_phi():
 
 def test_phi_sieve():
     assert int_helper.phi_sieve(100)[64] == 32
-
-# END
-
-def main():
-    pass
-
-if __name__ == "__main__":
-    #sys.exit(main())
-    main()
