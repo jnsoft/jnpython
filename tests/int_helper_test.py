@@ -157,8 +157,6 @@ def main():
     def f():
         return int_helper.primes_sieve(100000000)
     a = f()
-    
-
 
 if __name__ == "__main__":
     #sys.exit(main())
