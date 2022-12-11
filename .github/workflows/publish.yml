@@ -1,10 +1,7 @@
-name: Run tests
+name: "Publish package"
 
 on:
   push:
-    branches:
-      - '**'
-  pull_request:
     branches:
       - "main"
       
@@ -45,3 +42,25 @@ jobs:
 
       - name: Run tests
         run: PYTHONPATH=. python -m pytest --import-mode=append tests 
+
+  publish:
+    runs-on: ubuntu-latest
+    strategy:
+        matrix:
+          # Run in all these versions of Python
+          python-version: ['3.10']
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+        
+      - name: Setup Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v4.3.1
+        with:
+          # Version range or exact version of Python or PyPy to use, using SemVer's version range syntax. Reads from .python-version if unset.
+          python-version: ${{ matrix.python-version }}
+          
+      - name: Display Python version
+        run: python -c "import sys; print(sys.version)"
+
+
+
