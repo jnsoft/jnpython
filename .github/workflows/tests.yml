@@ -31,6 +31,13 @@ jobs:
       - name: Display Python version
         run: python -c "import sys; print(sys.version)"
         
+      - name: Install Python dependencies
+        uses: py-actions/py-dependency-install@v4
+        with:
+          update-pip: "false"
+          update-setuptools: "false"
+          update-wheel: "false"
+      
       #- name: Install package
       #  run: python src/int_helper.py install
         
