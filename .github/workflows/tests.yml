@@ -49,4 +49,4 @@ jobs:
           pip install pytest
 
       - name: Run tests
-        run: PYTHONPATH=. pytest --import-mode=append tests 
+        run: PYTHONPATH=. python -m pytest --import-mode=append tests 
