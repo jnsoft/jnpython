@@ -6,7 +6,7 @@ build-backend = "hatchling.build"
 name = "jnpython"
 version = "0.0.1"
 authors = [
-  { name="Johan Nilsson", email="author@example.com" },
+  { name="Johan Nilsson"},
 ]
 description = "Misc python helper functions"
 readme = "README.md"

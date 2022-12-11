@@ -39,9 +39,6 @@ jobs:
       - name: Build
         run : python -m build
         
-      - name: Publish
-        run : python -m build
-        
       - name: Upload to TestPyPI 
         run: |
             python -m twine upload --skip-existing dist/*
