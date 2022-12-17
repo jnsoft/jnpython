@@ -3,7 +3,7 @@ from int_helper import permutations, binom
 def pairs(arr): return [(a, b) for idx, a in enumerate(arr) for b in arr[idx + 1:]]
 
 # permutaion = combination with order
-def permute(arr, n = None):
+def permute(arr, n = None) ->list:
     if n is not None and len(arr) != n:
         combs = combinations(arr,n)
         res = []
@@ -32,7 +32,7 @@ def __go_permute(chars, k, m, strs, ix:list):
             (chars[i], chars[k]) = (chars[k], chars[i])
 
 # get combinations of length n from items (no repetition, order does not matter)
-def combinations(arr, n):
+def combinations(arr, n) ->list:
     combs = []
     c = len(arr)
     for i in range(binom(c, n)):
@@ -62,10 +62,3 @@ def __largest_v_combinations(a,b,x):
     while binom(v,b)>x:
         v-=1
     return v
-
-def main():
-    print(permute("1234",3))
-    pass
-
-if __name__ == "__main__":
-    main()
