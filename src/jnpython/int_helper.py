@@ -3,7 +3,7 @@ import math
 import multiprocessing
 import random
 from math import ceil, copysign, isqrt, sqrt
-import sorting
+from jnpython.sorting import q_sort
 
 _rand = random.SystemRandom()
 
@@ -465,7 +465,7 @@ def pollard_p_1(n:int):
 # Given two integers expressed as lists of prime factors, returns the product as primefactors
 def multiply_prime_factors(lhs:list, rhs:list)->list:
     product = [x for x in lhs] + [x for x in rhs] 
-    sorting.q_sort(product)
+    q_sort(product)
     return product
 
 # Given two integers expressed as lists of prime factors, returns the quotient as primefactors
