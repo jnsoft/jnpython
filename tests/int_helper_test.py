@@ -139,6 +139,25 @@ def test_factor():
     assert 132361 in fs
     assert 102816762607933019109385241527 in fs
 
+def test_multiply_prime_factors():
+    factor1 = (2,3,5,5) 
+    factor2 = (2,2,2,17) 
+    prod = int_helper.multiply_prime_factors(factor1, factor2)
+    assert prod == [2,2,2,2,3,5,5,17]
+
+def test_divide_prime_factors():
+    factor1 = (2,2,3,5,7,7,19) 
+    factor2 = (5,7,2) 
+    prod = int_helper.divide_prime_factors(factor1, factor2)
+    assert prod == [2,3,7,19]
+
+def test_evaluate_prime_factors():
+    factor1 = (2,3,5,5) 
+    factor2 = (2,2,2,17) 
+    prod = int_helper.multiply_prime_factors(factor1, factor2)
+    prod2 = int_helper.evaluate_prime_factors(prod)
+    assert prod2 == 2**4*3*5**2*17
+
 # MISC
 
 def test_phi():
