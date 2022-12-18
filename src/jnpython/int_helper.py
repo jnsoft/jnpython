@@ -2,7 +2,7 @@ from functools import reduce
 import multiprocessing
 import random
 import math
-from . import sorting
+import sorting
 
 _rand = random.SystemRandom()
 

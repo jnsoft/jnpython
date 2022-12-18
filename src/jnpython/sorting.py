@@ -4,6 +4,10 @@
 # QuickSort sorts in NlogN and uses logN extra space, but 3-way quicksort is the fastest and sorts in between N and NlogN depending on input distribution
 # MergeSort sorts in NlogN and uses N extra space 
 
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__)))
+
 __MERGE_CUTOFF = 7 # cutoff to insertion sort
 
 def is_sorted(arr): return __is_sorted(arr, 0, len(arr) - 1)
