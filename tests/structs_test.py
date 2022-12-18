@@ -1,6 +1,6 @@
 from random import randint, seed
 import pytest
-from structs import MaxIndexPQ, MaxPQ, MinIndexPQ, MinPQ, RedBlackBST, Bag, Stack, Queue
+from jnpython.structs import MaxIndexPQ, MaxPQ, MinIndexPQ, MinPQ, RedBlackBST, Bag, Stack, Queue
 
 def test_bag():
     b = Bag()

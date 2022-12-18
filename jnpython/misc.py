@@ -1,5 +1,5 @@
 from time import time
-from .graphs import Graph, ConnectedComponents
+from jnpython.graphs import Graph, ConnectedComponents
 
 # shows the execution time of the function object passed
 def timer_func(func):

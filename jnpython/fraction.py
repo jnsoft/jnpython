@@ -135,20 +135,3 @@ class Fraction:
     def __zero(): return Fraction(0,1)
 
     def copy(self): return Fraction(self.numerator, self.denominator)
-
-
-def main():
-    f1 = Fraction(2,4)
-    f2 = Fraction.from_float(317.128923872386248)
-    f3 = Fraction.from_string("2/8")
-
-
-    print(f1)
-    print(f2)
-    print(f3)
-    print(f1 == f3+f3)
-    print(f1*f1 == f3)
-    print(f1*f2*f3)
-   
-if __name__ == "__main__":
-    main()
