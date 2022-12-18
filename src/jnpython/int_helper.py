@@ -1,13 +1,12 @@
 from functools import reduce
-import math
 import multiprocessing
 import random
-from math import ceil, copysign, isqrt, sqrt
+import math
 import sorting
 
 _rand = random.SystemRandom()
 
-def sign(x): return copysign(1,x)
+def sign(x): return math.copysign(1,x)
 
 # concat 10 11 returns 1011
 def concat(a, b):
@@ -316,7 +315,7 @@ def __step2(n):
 
 def __step3(n, r):
     for a in range(1, r + 1):
-        if 1 < math.gcd(a, n) < n:
+        if 1 < gcd(a, n) < n:
             return False
     return True
 
@@ -395,7 +394,7 @@ def factors(n:int):
     elif is_prime(n): 
         return [n]
     else:
-        limit = ceil(sqrt(n))
+        limit = math.ceil(math.sqrt(n))
         i=5
         while i < limit:
             if n%i == 0: 
@@ -408,12 +407,12 @@ def factors(n:int):
 
 # Fermat factorization, good when N=pq and |p-q| is small or one factor is close to sqrt(n)
 def fermat_factor(n:int):
-    sq_root = isqrt(n)
+    sq_root = math.isqrt(n)
     y2 = y = root = 0
     x = sq_root
     while x<n:
         y2 = abs(x*x-n)
-        root = isqrt(y2)
+        root = math.isqrt(y2)
         if y2==root*root:
             y = root
             s = x-y
@@ -628,3 +627,16 @@ def __stern_brocot(n):
         consider+=1
         i+=2
     return seq
+
+"""
+def main():
+
+    fac1 = (3,5,7)
+    fac2 = (2,3,5)
+    prod1 = multiply_prime_factors(fac1,fac2)
+    print(prod1)
+
+   
+if __name__ == "__main__":
+    main()
+"""
