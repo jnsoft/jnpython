@@ -1,5 +1,5 @@
 from time import time
-from graphs import Graph, ConnectedComponents
+from .graphs import Graph, ConnectedComponents
 
 # shows the execution time of the function object passed
 def timer_func(func):
@@ -67,7 +67,7 @@ def dbscan(db:list, min_pts, eps = 1e-16):
     
     return (outliers, labels)
 
-
+"""
 def main():
 
 
@@ -78,3 +78,4 @@ def main():
    
 if __name__ == "__main__":
     main()
+"""
