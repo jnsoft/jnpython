@@ -629,6 +629,7 @@ def __stern_brocot(n):
         i+=2
     return seq
 
+"""
 def main():
 
     fac1 = (3,5,7)
@@ -639,3 +640,4 @@ def main():
    
 if __name__ == "__main__":
     main()
+"""
