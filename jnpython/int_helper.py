@@ -2,7 +2,7 @@ from functools import reduce
 import multiprocessing
 import random
 import math
-from .sorting import q_sort
+from jnpython.sorting import q_sort
 
 _rand = random.SystemRandom()
 

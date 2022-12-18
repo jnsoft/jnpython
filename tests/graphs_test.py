@@ -1,6 +1,6 @@
 from random import randint
 import pytest
-import graphs
+import jnpython.graphs as graphs
 
 @pytest.fixture
 def graph1():

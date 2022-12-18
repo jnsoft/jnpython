@@ -34,9 +34,3 @@ def longest_palindrome(s):
     pos = (ix - longest_palindrome_in_s)//2
     palindrome = s[pos:pos+longest_palindrome_in_s]
     return longest_palindrome_in_s, pos, palindrome
-
-def main():
-    print(longest_palindrome("kanin"))
-
-if __name__ == "__main__":
-    main()
