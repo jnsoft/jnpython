@@ -3,7 +3,7 @@ import math
 import multiprocessing
 import random
 from math import ceil, copysign, isqrt, sqrt
-from jnpython import sorting
+import sorting
 
 _rand = random.SystemRandom()
 
