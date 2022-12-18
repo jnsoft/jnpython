@@ -3,7 +3,7 @@ import math
 import multiprocessing
 import random
 from math import ceil, copysign, isqrt, sqrt
-import sorting
+from jnpython import sorting
 
 _rand = random.SystemRandom()
 
@@ -628,3 +628,14 @@ def __stern_brocot(n):
         consider+=1
         i+=2
     return seq
+
+def main():
+
+    fac1 = (3,5,7)
+    fac2 = (2,3,5)
+    prod1 = multiply_prime_factors(fac1,fac2)
+    print(prod1)
+
+   
+if __name__ == "__main__":
+    main()
