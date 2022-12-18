@@ -1,7 +1,7 @@
 from functools import reduce
 from math import inf
-from structs import MinIndexPQ, MinPQ, Queue, RedBlackBST, Stack, UF
 from random import randint, random, seed
+from jnpython.structs import MinIndexPQ, MinPQ, Queue, RedBlackBST, Stack, UF
 
 class Graph:
     def __init__(self, v:int): # v=number of verticies

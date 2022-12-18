@@ -1,5 +1,5 @@
 import pytest
-from misc import euclidean_distance
+from jnpython.misc import euclidean_distance
 
 
 def test_euclidean_distance():
