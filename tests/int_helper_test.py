@@ -1,7 +1,7 @@
 from random import randint
-import int_helper
 import pytest
 from functools import reduce
+import jnpython.int_helper
 
 p_10 = 9576890767
 p_30 = 362736035870515331128527330659
